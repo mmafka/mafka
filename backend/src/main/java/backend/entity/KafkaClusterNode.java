@@ -11,6 +11,6 @@ import javax.persistence.Entity;
 public class KafkaClusterNode extends BaseEntity {
     private long kafkaClusterId;
     private long clusterNodeId;
-    private boolean zookeeper;
-    private boolean kafkaBroker;
+    private Boolean zookeeper;
+    private Boolean kafkaBroker;
 }
