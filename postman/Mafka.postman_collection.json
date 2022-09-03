@@ -1,0 +1,465 @@
+{
+	"info": {
+		"_postman_id": "7de137fc-6959-487f-afc7-b3cfa8f72d28",
+		"name": "Mafka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cluster",
+			"item": [
+				{
+					"name": "save",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "tokenType",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "{{mafka}}",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "mafka",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"clusterName\":\"cluster1\"}"
+						},
+						"url": {
+							"raw": "localhost:8080/cluster/save",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cluster",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "tokenType",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "{{mafka}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "body",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "localhost:8080/login",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "mafka",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "mafka",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "mafka",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/cluster/get/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cluster",
+								"get",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "tokenType",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "{{mafka}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "body",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "localhost:8080/login",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "mafka",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "mafka",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "mafka",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/cluster/delete/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cluster",
+								"delete",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "tokenType",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "{{mafka}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "body",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "localhost:8080/login",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "mafka",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "mafka",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "mafka",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/cluster/getAll",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cluster",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userName\":\"mafka\",\"password\":\"mafka\"}"
+				},
+				"url": {
+					"raw": "localhost:8080/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "mafka",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "mafka",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "mafka",
+			"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYWZrYSIsImV4cCI6MTY2MjYzOTY1Mn0.hYzl6tzQHluGNthXXDC8ZEZPwWrIjINQFepiKblQoglZnEQC84wbpk18GzkWWtUoB5nmsqYSQwDTRKzTC4LXAw"
+		}
+	]
+}
