@@ -13,7 +13,7 @@ public class ClusterNodeEntity extends BaseEntity {
     private String nodeName;
     private String nodeIp;
     private String userName;
-    private String dockerStatus;
+    private boolean dockerStatus;
     private long ram;
     private long cpu;
     private long disk;
