@@ -8,7 +8,7 @@ import javax.persistence.Entity;
 @Entity
 @Getter
 @Setter
-public class ClusterNodeEntity extends BaseEntity {
+public class ClusterNode extends BaseEntity {
     private long clusterId;
     private String nodeName;
     private String nodeIp;

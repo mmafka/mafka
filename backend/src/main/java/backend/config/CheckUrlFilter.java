@@ -66,10 +66,11 @@ public class CheckUrlFilter extends BasicAuthenticationFilter {
             if (url.equals(req.getServletPath()))
                 status = true;
         for (GrantedAuthority grantedAuthority : authentication.getAuthorities())
-            if (grantedAuthority.getAuthority().equals("admin"))
+            if (grantedAuthority.getAuthority().equals("mafka"))
                 status = true;
         if (!status)
-            throw new PermissionDeniedDataAccessException("Error", new Throwable());
+            if(!authentication.getPrincipal().equals("mafka"))
+                throw new PermissionDeniedDataAccessException("Error", new Throwable());
         SecurityContextHolder.getContext().setAuthentication(authentication);
         chain.doFilter(req, res);
     }

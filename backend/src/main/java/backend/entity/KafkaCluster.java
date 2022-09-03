@@ -8,7 +8,7 @@ import javax.persistence.Entity;
 @Entity
 @Getter
 @Setter
-public class KafkaClusterEntity extends BaseEntity {
+public class KafkaCluster extends BaseEntity {
     private String kafkaClusterName;
     private Long clusterId;
 }

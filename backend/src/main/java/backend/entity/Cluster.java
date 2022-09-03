@@ -8,6 +8,6 @@ import javax.persistence.Entity;
 @Entity
 @Getter
 @Setter
-public class ClusterEntity extends BaseEntity {
+public class Cluster extends BaseEntity {
     private String clusterName;
 }
