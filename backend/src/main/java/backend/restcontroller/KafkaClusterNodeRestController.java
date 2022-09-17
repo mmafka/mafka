@@ -1,10 +1,8 @@
 package backend.restcontroller;
 
-import backend.dao.ClusterDao;
 import backend.dao.ClusterNodeDao;
 import backend.dao.KafkaClusterDao;
 import backend.dao.KafkaClusterNodeDao;
-import backend.entity.Cluster;
 import backend.entity.ClusterNode;
 import backend.entity.KafkaCluster;
 import backend.entity.KafkaClusterNode;
@@ -43,12 +41,12 @@ public class KafkaClusterNodeRestController {
             currentKafkaClusterNode.setKafkaClusterId(kafkaClusterNode.getKafkaClusterId());
             ClusterNode clusterNode = clusterNodeDao.findById(kafkaClusterNode.getClusterNodeId()).isPresent() ? clusterNodeDao.findById(kafkaClusterNode.getClusterNodeId()).get() : null;
             if (clusterNode != null) {
-                currentKafkaClusterNode.setClusterNodeId(kafkaClusterNode.getKafkaClusterId());
+                currentKafkaClusterNode.setClusterNodeId(kafkaClusterNode.getClusterNodeId());
                 kafkaClusterNodeDao.save(currentKafkaClusterNode);
             }
         }
 
-            
+
     }
 
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.GET)
