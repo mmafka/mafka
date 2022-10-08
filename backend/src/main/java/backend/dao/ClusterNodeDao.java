@@ -8,8 +8,8 @@ import java.util.Optional;
 
 public interface ClusterNodeDao extends JpaRepository<ClusterNode, Long> {
     ClusterNode findByNodeName(String clusterName);
-
+    List<ClusterNode> findByClusterId(Long id);
     Optional<ClusterNode> findById(Long id);
-
     List<ClusterNode> findAllByStatus(Integer status);
+    Long countAllByStatus(Integer status);
 }

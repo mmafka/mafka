@@ -9,7 +9,7 @@ import javax.persistence.Entity;
 @Getter
 @Setter
 public class ClusterNode extends BaseEntity {
-    private long clusterId;
+    private Long clusterId;
     private String nodeName;
     private String nodeIp;
     private String userName;

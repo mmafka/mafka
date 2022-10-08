@@ -1,6 +1,7 @@
 package backend.dao;
 
 import backend.entity.Cluster;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
@@ -12,4 +13,9 @@ public interface ClusterDao extends JpaRepository<Cluster, Long> {
     Optional<Cluster> findById(Long id);
 
     List<Cluster> findAllByStatus(Integer status);
+
+    Long countAllByStatus(Integer status);
+
+    List<Cluster> findAllByStatusOrderByCreationDateDesc(Integer status, Pageable pageable);
+
 }

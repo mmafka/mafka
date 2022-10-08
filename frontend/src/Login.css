@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* login */
+.login-background
+{
+  width: 100%;
+  height: 100%;
+  background: url("images/login-bg.jpg");
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: cover;
+}
+.login-blur
+{
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: cover;
+}
+.login-panel
+{
+  background: rgba(247, 246, 255, 0.8);
+  position: relative;
+  margin: auto;
+  margin-top: 20%;
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+}
+.login-panel-op1
+{
+  padding: 30px 30px 30px 30px;
+  position: relative;
+  margin: auto;
+  margin-top: 20%;
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+}
+.login-context
+{
+  width: 230px;
+}
